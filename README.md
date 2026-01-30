@@ -3,19 +3,25 @@
 I am a Japanese Web engineer and I develop on a MacBook. I use a US layout keyboard, which I have set up to support Japanese. So I have introduced tools to support Japanese language as well as development.
 
 ### WezTerm
-My [dotfiles](https://github.com/tamago3keran/dotfiles_for_docker) can not used properly with Terminal.app which is installed by default on Mac. So I recommend using WezTerm. Please download WezTerm on [the Website](https://wezfurlong.org/wezterm/index.html).
+My [dotfiles](https://github.com/tamago3keran/dotfiles_for_docker) can not used properly with Terminal.app which is installed by default on Mac. So I recommend using WezTerm.
 
 ### Docker
-I use Docker for the development. So please install [Docker Desktop for Mac](https://docs.docker.com/desktop/install/mac-install/).
+I use Docker for the development.
 
 ### Karabiner-Elements
-I need the tool because I use Japanese on a MacBook with a US layout keyboard. So please install [Karabiner-Elements](https://karabiner-elements.pqrs.org).
+I need the tool because I use Japanese on a MacBook with a US layout keyboard.
 
 ### Clipy
-I extend the clipboard functionality to improve development efficiency on my MacBook. So please install [Clipy](https://clipy-app.com).
+I extend the clipboard functionality to improve development efficiency on my MacBook.
 
 ## Setup
-After installing the tools, download the prepared config files.
+Install the tools and download the prepared config files.
+
+### Install Tools
+
+```
+brew bundle
+```
 
 ### WezTerm
 
