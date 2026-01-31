@@ -1,5 +1,3 @@
-tap "homebrew/bundle"
-
 # CLI Tools
 brew "btop"
 brew "gum"
