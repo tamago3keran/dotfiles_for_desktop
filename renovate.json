@@ -9,11 +9,11 @@
   },
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": ["patch", "pin", "digest"],
       "automerge": true
     },
     {
-      "matchUpdateTypes": ["major"],
+      "matchUpdateTypes": ["minor", "major"],
       "automerge": false
     }
   ]
