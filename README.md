@@ -5,10 +5,9 @@ After installing the tools, download the prepared config files.
 ### WezTerm
 
 ```
-curl -L https://raw.githubusercontent.com/tamago3keran/dotfiles_for_desktop/main/.wezterm.lua -o $HOME/.wezterm.lua
-
-mkdir .wezterm
-curl -L https://raw.githubusercontent.com/tamago3keran/dotfiles_for_desktop/main/.wezterm/background_image.jpeg -o $HOME/.wezterm/background_image.jpeg
+mkdir -p $HOME/.config/wezterm
+curl -L https://raw.githubusercontent.com/tamago3keran/dotfiles_for_desktop/main/.config/wezterm/wezterm.lua -o $HOME/.config/wezterm/wezterm.lua
+curl -L https://raw.githubusercontent.com/tamago3keran/dotfiles_for_desktop/main/.config/wezterm/background_image.jpeg -o $HOME/.config/wezterm/background_image.jpeg
 ```
 
 ### Karabiner-Elements
