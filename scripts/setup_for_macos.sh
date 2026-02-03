@@ -44,4 +44,4 @@ killall cfprefsd
 defaults write -g KeyRepeat -int 1
 defaults write -g InitialKeyRepeat -int 20
 
-sudo shutdown -r now
+echo "Setup complete. Please reboot your Mac to apply all changes."
