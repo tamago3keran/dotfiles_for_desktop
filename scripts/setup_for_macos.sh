@@ -21,7 +21,11 @@ curl -L "${REPO_URL}/.config/mise/config.toml" -o "$XDG_CONFIG_HOME/mise/config.
 ## Install Homebrew and packages
 if ! command -v brew >/dev/null 2>&1; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    eval "$(/opt/homebrew/bin/brew shellenv)"
+    if [[ "$(uname -m)" == "arm64" ]]; then # Apple Silicon
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+    else # Intel
+        eval "$(/usr/local/bin/brew shellenv)"
+    fi
 fi
 
 brew bundle --file="$HOME/Brewfile"
