@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 ## Set config directory with XDG support
 XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
