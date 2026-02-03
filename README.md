@@ -1,28 +1,19 @@
 # dotfiles_for_desktop
+
 ## Setup
-After installing the tools, download the prepared config files.
 
-### WezTerm
+This repository provides a setup script to automate the environment configuration.
 
-```
-mkdir -p $HOME/.config/wezterm
-curl -L https://raw.githubusercontent.com/tamago3keran/dotfiles_for_desktop/main/.config/wezterm/wezterm.lua -o $HOME/.config/wezterm/wezterm.lua
-curl -L https://raw.githubusercontent.com/tamago3keran/dotfiles_for_desktop/main/.config/wezterm/background_image.jpeg -o $HOME/.config/wezterm/background_image.jpeg
-```
+### Prerequisites
 
-### Karabiner-Elements
+- Ensure you are using `zsh`.
 
-```
-mkdir -p $HOME/.config/karabiner
-curl -L https://raw.githubusercontent.com/tamago3keran/dotfiles_for_desktop/main/.config/karabiner/karabiner.json -o $HOME/.config/karabiner/karabiner.json
+### Installation
+
+Run the following command in your terminal to execute the setup script:
+
+```bash
+curl -L https://raw.githubusercontent.com/tamago3keran/dotfiles_for_desktop/main/scripts/setup_for_macos.sh | zsh
 ```
 
-### Scripts
-
-```
-curl -L https://raw.githubusercontent.com/tamago3keran/dotfiles_for_desktop/main/scripts/setup_for_macos.sh -o $HOME/setup.sh
-sh $HOME/setup.sh
-```
-
-※ Running the script will restart the computer.
-※ Delete the script file after restart.
+**Note:** This script will restart your computer automatically upon completion.
