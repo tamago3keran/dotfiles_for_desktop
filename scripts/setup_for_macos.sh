@@ -6,7 +6,6 @@ XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 ## Create directories
 mkdir -p "$XDG_CONFIG_HOME/wezterm"
 mkdir -p "$XDG_CONFIG_HOME/karabiner"
-mkdir -p "$XDG_CONFIG_HOME/mise"
 
 ## Download configuration files
 REPO_URL="https://raw.githubusercontent.com/tamago3keran/dotfiles_for_desktop/main"
@@ -16,7 +15,6 @@ curl -L "${REPO_URL}/.config/wezterm/background_image.jpeg" -o "$XDG_CONFIG_HOME
 curl -L "${REPO_URL}/.config/karabiner/karabiner.json" -o "$XDG_CONFIG_HOME/karabiner/karabiner.json"
 curl -L "${REPO_URL}/.zshrc" -o "$HOME/.zshrc"
 curl -L "${REPO_URL}/Brewfile" -o "$HOME/Brewfile"
-curl -L "${REPO_URL}/.config/mise/config.toml" -o "$XDG_CONFIG_HOME/mise/config.toml"
 
 ## Install Homebrew and packages
 if ! command -v brew >/dev/null 2>&1; then
@@ -25,12 +23,6 @@ if ! command -v brew >/dev/null 2>&1; then
 fi
 
 brew bundle --file="$HOME/Brewfile"
-
-## Setup mise and install tools
-if command -v mise >/dev/null 2>&1; then
-    eval "$(mise activate zsh)"
-    mise install -y
-fi
 
 ## macOS system settings
 defaults write com.apple.dock persistent-apps -array
