@@ -2,7 +2,6 @@
 brew "btop"
 brew "gum"
 brew "lazydocker"
-brew "mise"
 
 # GUI Apps
 cask "clipy"

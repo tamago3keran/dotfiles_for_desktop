@@ -3,10 +3,6 @@
   "extends": [
     "config:base"
   ],
-  "mise": {
-    "enabled": true,
-    "fileMatch": ["^\\.config/mise/config\\.toml$"]
-  },
   "packageRules": [
     {
       "matchUpdateTypes": ["patch", "pin", "digest"],
